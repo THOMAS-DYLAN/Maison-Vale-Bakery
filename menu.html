@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu — Maison Vale Bakery</title>
+  <meta name="description" content="Browse Maison Vale's full menu of artisan pastries, fresh-baked breads, celebration cakes, specialty coffees, and seasonal offerings.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body data-nav-dark="false">
+
+<div id="site-nav-placeholder"></div>
+
+<!-- ============================================================
+     PAGE HERO
+============================================================ -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1800&q=80" alt="Bakery counter display">
+    <div class="page-hero-overlay"></div>
+  </div>
+  <div class="container page-hero-content">
+    <p class="eyebrow reveal" style="color:rgba(255,255,255,0.65);">Baked Fresh Daily</p>
+    <h1 class="reveal reveal-delay-1">Our Menu</h1>
+    <p class="reveal reveal-delay-2">Every morning begins before dawn. By the time our doors open, the pastry cases are full.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     MENU NAV
+============================================================ -->
+<div class="menu-nav-bar">
+  <div class="container">
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-target="viennoiserie">Viennoiserie</button>
+      <button class="menu-tab" data-target="breads">Artisan Breads</button>
+      <button class="menu-tab" data-target="cakes">Cakes & Patisserie</button>
+      <button class="menu-tab" data-target="beverages">Beverages</button>
+      <button class="menu-tab" data-target="seasonal">Seasonal</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     MENU SECTIONS
+============================================================ -->
+<div class="menu-content">
+  <div class="container">
+
+    <!-- VIENNOISERIE -->
+    <section class="menu-section active" id="viennoiserie">
+      <div class="menu-section-header reveal">
+        <span class="script" style="font-size:2.2rem; color:var(--mocha);">Viennoiserie</span>
+        <p>Hand-laminated, butter-forward pastries made using a three-day process for maximum flavor and flake. Available daily until sold out.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Plain croissant">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Classic Butter Croissant</h4>
+              <span class="menu-price">$5</span>
+            </div>
+            <p>Made with French AOP butter and slow-fermented dough. Shatteringly crisp exterior, honeycomb interior.</p>
+            <span class="menu-tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1586444248879-bc604cbd555a?w=600&q=80" alt="Pain au chocolat">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Pain au Chocolat</h4>
+              <span class="menu-price">$6</span>
+            </div>
+            <p>Double bars of Valrhona 66% dark chocolate wrapped in our classic croissant dough.</p>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1620146344904-097a0002d8c0?w=600&q=80" alt="Kouign amann">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Kouign-Amann</h4>
+              <span class="menu-price">$7</span>
+            </div>
+            <p>A Breton classic. Laminated dough caramelized with salted butter and raw sugar into a deeply golden round.</p>
+            <span class="menu-tag">Weekend Only</span>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600&q=80" alt="Almond croissant">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Almond Croissant</h4>
+              <span class="menu-price">$6.50</span>
+            </div>
+            <p>Day-old croissants soaked in orange blossom syrup, filled and topped with frangipane and toasted almonds.</p>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1604152135912-04a022e23696?w=600&q=80" alt="Danish">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Seasonal Danish</h4>
+              <span class="menu-price">$7</span>
+            </div>
+            <p>Our laminated danish changes with what's ripe. Currently: white peach and vanilla cream with toasted pistachios.</p>
+            <span class="menu-tag">Seasonal</span>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1614970234058-62e3fa8da4c7?w=600&q=80" alt="Morning bun">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Morning Bun</h4>
+              <span class="menu-price">$6</span>
+            </div>
+            <p>A citrus-scented laminated bun rolled in cinnamon sugar. Crisp outside, soft and layered within.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BREADS -->
+    <section class="menu-section" id="breads">
+      <div class="menu-section-header reveal">
+        <span class="script" style="font-size:2.2rem; color:var(--mocha);">Artisan Breads</span>
+        <p>All loaves are naturally leavened with our 7-year-old sourdough starter and baked in a stone deck oven. Available by the loaf or half-loaf. Pre-orders recommended for weekend pickup.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=600&q=80" alt="Country sourdough">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Country Sourdough</h4>
+              <span class="menu-price">$16</span>
+            </div>
+            <p>A 70% hydration white-wheat loaf with an open crumb, glossy crust, and long ferment for mild acidity.</p>
+            <span class="menu-tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1554322048-a631e5c8e56b?w=600&q=80" alt="Seeded batard">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Seeded Rye Batard</h4>
+              <span class="menu-price">$18</span>
+            </div>
+            <p>30% dark rye flour with sesame, sunflower, and poppy seeds throughout. Dense, earthy, and deeply satisfying.</p>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1609167830220-7164aa360951?w=600&q=80" alt="Einkorn loaf">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Ancient Grain Miche</h4>
+              <span class="menu-price">$22</span>
+            </div>
+            <p>A large country miche with einkorn, emmer, and heritage red wheat. Nutty, complex, and nutrient-dense.</p>
+            <span class="menu-tag">Pre-order</span>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc8611?w=600&q=80" alt="Focaccia">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Rosemary Focaccia</h4>
+              <span class="menu-price">$12</span>
+            </div>
+            <p>Olive oil-generous focaccia with fresh rosemary, sea salt, and today's seasonal toppings. Sold in generous squares.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAKES & PATISSERIE -->
+    <section class="menu-section" id="cakes">
+      <div class="menu-section-header reveal">
+        <span class="script" style="font-size:2.2rem; color:var(--mocha);">Cakes & Patisserie</span>
+        <p>Individual pastries, tarts, and slices available daily at the counter. Full custom cakes available by special order — see our <a href="custom-orders.html" style="color:var(--mocha);">Custom Orders</a> page.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80" alt="Fruit tart">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Seasonal Fruit Tart</h4>
+              <span class="menu-price">$9</span>
+            </div>
+            <p>Buttery pâte sablée shell with vanilla bean cream and today's seasonal fruit arrangement. Currently stone fruit.</p>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Eclair">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Coffee Éclair</h4>
+              <span class="menu-price">$8</span>
+            </div>
+            <p>Choux pastry filled with coffee diplomat cream and glazed with a dark espresso fondant. A Maison Vale staple.</p>
+            <span class="menu-tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=600&q=80" alt="Opera cake slice">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Opéra Slice</h4>
+              <span class="menu-price">$10</span>
+            </div>
+            <p>The classic Parisian layered cake: coffee-soaked joconde sponge, buttercream, and ganache. Served in a precise rectangle.</p>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1611690736391-82bdce985fae?w=600&q=80" alt="Lemon tart">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Lemon Brûlée Tart</h4>
+              <span class="menu-price">$9</span>
+            </div>
+            <p>A silky lemon curd tart with a brûléed sugar top and touch of sea salt. Bright, balanced, and unmissable.</p>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=600&q=80" alt="Financier">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Brown Butter Financier</h4>
+              <span class="menu-price">$5</span>
+            </div>
+            <p>Rich almond cakes made with beurre noisette and seasonal additions — today, lavender honey and fresh thyme.</p>
+          </div>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" alt="Birthday cake slice">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Cake of the Week</h4>
+              <span class="menu-price">$11/slice</span>
+            </div>
+            <p>Our weekly showpiece layer cake, available by the slice. This week: elderflower and lemon curd with Swiss meringue.</p>
+            <span class="menu-tag">Ask at counter</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEVERAGES -->
+    <section class="menu-section" id="beverages">
+      <div class="menu-section-header reveal">
+        <span class="script" style="font-size:2.2rem; color:var(--mocha);">Beverages</span>
+        <p>We source our espresso from a small-batch roaster in the Pacific Northwest, changing the single-origin offering seasonally.</p>
+      </div>
+      <div class="beverages-layout">
+        <div class="bev-column reveal">
+          <h4 class="bev-category">Espresso</h4>
+          <div class="bev-item"><span>Espresso</span><span>$4</span></div>
+          <div class="bev-item"><span>Cortado</span><span>$5</span></div>
+          <div class="bev-item"><span>Flat White</span><span>$6</span></div>
+          <div class="bev-item"><span>Cappuccino</span><span>$6</span></div>
+          <div class="bev-item"><span>Latte (12 oz)</span><span>$6.50</span></div>
+          <div class="bev-item"><span>Latte (16 oz)</span><span>$7.50</span></div>
+          <div class="bev-item"><span>Americano</span><span>$5</span></div>
+        </div>
+        <div class="bev-column reveal reveal-delay-1">
+          <h4 class="bev-category">Signature Lattes</h4>
+          <div class="bev-item"><span>Rose Cardamom Latte <em>(Signature)</em></span><span>$8</span></div>
+          <div class="bev-item"><span>Brown Sugar Cinnamon Oat</span><span>$8</span></div>
+          <div class="bev-item"><span>Lavender Honey</span><span>$8</span></div>
+          <div class="bev-item"><span>Seasonal Latte</span><span>$8</span></div>
+        </div>
+        <div class="bev-column reveal reveal-delay-2">
+          <h4 class="bev-category">Other Drinks</h4>
+          <div class="bev-item"><span>Pour-Over (Single Origin)</span><span>$7</span></div>
+          <div class="bev-item"><span>Matcha Latte</span><span>$7</span></div>
+          <div class="bev-item"><span>Golden Milk</span><span>$7</span></div>
+          <div class="bev-item"><span>Hot Chocolate</span><span>$6</span></div>
+          <div class="bev-item"><span>Sparkling Water</span><span>$3</span></div>
+          <div class="bev-item"><span>Iced Coffee</span><span>$6</span></div>
+        </div>
+        <div class="bev-note reveal reveal-delay-3">
+          <p>Oat, almond, and whole milk available. Non-dairy +$1. All our drinks are prepared with care and without rush.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEASONAL -->
+    <section class="menu-section" id="seasonal">
+      <div class="menu-section-header reveal">
+        <span class="script" style="font-size:2.2rem; color:var(--mocha);">Seasonal Offerings</span>
+        <p>We rotate our seasonal specials as local ingredients dictate. Items below are current as of this season. Ask at the counter or follow us on Instagram for the latest additions.</p>
+      </div>
+      <div class="seasonal-feature-grid">
+        <div class="seasonal-feature-card reveal" style="background:var(--parchment);">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80" alt="Summer seasonal">
+          <div class="seasonal-feature-body">
+            <span class="eyebrow">Now Available · Summer</span>
+            <h3>Stone Fruit Collection</h3>
+            <ul class="menu-season-list">
+              <li>Peach & Almond Frangipane Tart — $9</li>
+              <li>Cherry Clafoutis Slice — $8</li>
+              <li>Apricot Marzipan Danish — $7</li>
+              <li>Lavender Honey Financier — $5</li>
+              <li>White Nectarine Galette — $9</li>
+              <li>Peach Melba Trifle Cup — $11</li>
+            </ul>
+          </div>
+        </div>
+        <div class="seasonal-feature-card reveal reveal-delay-2" style="background:var(--cream);">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Seasonal drinks">
+          <div class="seasonal-feature-body">
+            <span class="eyebrow">Now Available · Summer Drinks</span>
+            <h3>Summer Sips</h3>
+            <ul class="menu-season-list">
+              <li>Peach Blossom Latte (H/I) — $8</li>
+              <li>Cucumber Mint Cold Brew — $7</li>
+              <li>Strawberry Rose Lemonade — $6</li>
+              <li>Iced Lavender Matcha — $8</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ============================================================
+     MENU FOOTER NOTE
+============================================================ -->
+<div class="menu-footnote">
+  <div class="container text-center">
+    <p class="eyebrow">Availability</p>
+    <p class="mt-4">Most items sell out by midday. We recommend arriving early. Items marked <em>Weekend Only</em> are available Saturday and Sunday. Items marked <em>Pre-order</em> require 48 hours notice — please <a href="contact.html">contact us</a> to arrange.</p>
+    <a href="custom-orders.html" class="btn btn-dark mt-8"><span>Inquire About Custom Cakes</span></a>
+  </div>
+</div>
+
+<div id="site-footer-placeholder"></div>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

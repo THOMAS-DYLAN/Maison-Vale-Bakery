@@ -1,0 +1,214 @@
+/* ============================================================
+   CUSTOM ORDERS PAGE STYLES
+   ============================================================ */
+
+/* Re-use page-hero from menu.css */
+@import url('./menu.css');
+
+/* ---- Intro ---- */
+.custom-intro { background: var(--warm-white); }
+.custom-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.custom-intro-image {
+  position: relative;
+}
+.custom-intro-image img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+.intro-img-badge {
+  position: absolute;
+  top: 28px;
+  left: -24px;
+  background: var(--bark);
+  padding: 20px 28px;
+  text-align: center;
+}
+.intro-img-badge p {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.5);
+  margin-top: 4px;
+}
+
+/* ---- Occasions ---- */
+.occasions-section { background: var(--parchment); }
+.occasions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.occasion-card {
+  background: var(--warm-white);
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+}
+.occasion-card:hover { box-shadow: var(--shadow-md); }
+
+.occasion-img {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.occasion-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+.occasion-card:hover .occasion-img img { transform: scale(1.05); }
+
+.occasion-body { padding: 32px 28px; }
+.occasion-icon {
+  display: block;
+  color: var(--gold);
+  font-size: 0.8rem;
+  margin-bottom: 14px;
+}
+.occasion-body h3 { margin-bottom: 12px; }
+.occasion-body p { font-size: 0.9rem; color: var(--mocha); }
+.occasion-lead {
+  margin-top: 14px !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.04em;
+  font-style: italic;
+}
+
+/* ---- Process ---- */
+.process-section { background: var(--cream); }
+.process-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+.process-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.step-number {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  color: var(--linen);
+  line-height: 1;
+}
+.step-body h4 { font-size: 1.15rem; margin-bottom: 10px; }
+.step-body p { font-size: 0.88rem; color: var(--mocha); }
+.step-connector {
+  flex: 0 0 40px;
+  height: 1px;
+  background: var(--linen);
+  margin-top: 28px;
+  align-self: flex-start;
+}
+
+/* ---- Flavors ---- */
+.flavors-banner {
+  background: var(--bark);
+  padding: 64px 0;
+}
+.flavors-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+  align-items: start;
+}
+.flavors-header .eyebrow { color: var(--gold); margin-bottom: 12px; }
+.flavors-header h3 { color: var(--warm-white); font-size: 1.6rem; }
+.flavors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.flavors-list span {
+  padding: 8px 18px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  transition: border-color var(--transition), color var(--transition);
+}
+.flavors-list span:hover {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+.flavors-note {
+  grid-column: 1 / -1;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.4);
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ---- Inquiry Form ---- */
+.inquiry-section { background: var(--warm-white); }
+.inquiry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+}
+.inquiry-sidebar h2 { margin-top: 16px; }
+
+.inquiry-checklist {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.inquiry-checklist li {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.check-icon {
+  color: var(--gold);
+  font-size: 0.7rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+.inquiry-checklist strong { display: block; font-weight: 500; margin-bottom: 4px; }
+.inquiry-checklist p { font-size: 0.85rem; color: var(--mocha); }
+
+.inquiry-note {
+  margin-top: 40px;
+  padding: 24px 28px;
+  background: var(--parchment);
+  border-left: 2px solid var(--gold);
+}
+.inquiry-note p { font-size: 0.88rem; color: var(--mocha); }
+
+.inquiry-form-wrap h3 {
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--linen);
+}
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .custom-intro-grid { grid-template-columns: 1fr; }
+  .occasions-grid { grid-template-columns: 1fr; }
+  .process-steps { flex-direction: column; gap: 32px; }
+  .step-connector { display: none; }
+  .flavors-inner { grid-template-columns: 1fr; gap: 32px; }
+  .inquiry-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .form-row { grid-template-columns: 1fr; }
+  .intro-img-badge { left: 0; top: 0; }
+}
